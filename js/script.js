@@ -6,7 +6,7 @@ ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 ajax.onreadystatechange = function() {
 	if (ajax.readyState == 4 && ajax.status == 200) {
 		var result = JSON.parse(ajax.responseText);
-		console.log(result.length);
+
 
 		for(i=0;i<result.length;i++){
 
@@ -55,8 +55,18 @@ ajax.onreadystatechange = function() {
 			//Dynamisch creeren van de bekijk knop
 			var magnify = document.createElement('i');
 			magnify.classList.add('magnify', 'fas', 'fa-search');
-			magnify.setAttribute('data-id', result[i]['id']);
-			var check = document.createTextNode('Bekijk');
+
+			// var id = result[i]['id'];
+
+			// magnify.addEventListener("click", function(){
+			// 	window.location.href = `info.php?id=${id}`;
+			// });
+
+			var check = document.createElement('a');
+			check.style.textDecoration = "none";
+			check.style.color = "black";
+			check.innerText = "Bekijk";
+			check.href = `info.php?id=${result[i]['id']}`;
 			magnify.appendChild(check);
 
 
