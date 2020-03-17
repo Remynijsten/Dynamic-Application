@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #CCCCCC;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.wrapper nav {
+  height: 3em;
+  background: white;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.wrapper nav h1 {
+  line-height: 2em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5fr;
+  margin-bottom: 1em;
+  background: white;
+  padding: 1em 0;
+}
+main .slot {
+  padding: 1em;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 1em;
+  display: flex;
+  position: relative;
+}
+main .slot .avatar {
+  border-radius: 10em;
+  width: 10em;
+  display: inline-flex;
+  margin-right: 1em;
+}
+main .slot .name {
+  display: inline-flex;
+}
+main .slot ul {
+  float: right;
+  position: absolute;
+  left: 12em;
+  top: 4em;
+  list-style: none;
+}
+main .slot ul li {
+  margin-bottom: 0.5em;
+}
+main .slot ul li i {
+  margin-right: 0.5em;
+}
+main .slot .magnify {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 2em;
+  background: white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
