@@ -68,7 +68,7 @@ ajax.onreadystatechange = function() {
 			text.appendChild(info);
 
 			var statBox = document.createElement('div');
-			statBox.style.background = "lightblue";
+			statBox.style.background = `${result[0]['color']}`;
 			statBox.style.padding = "1em";
 			statBox.style.border = "1px solid black";
 
